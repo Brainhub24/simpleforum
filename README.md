@@ -1,50 +1,45 @@
-**介绍：**
+Introduction:
 
-极简论坛系统，功能简单，界面简洁，移动优先。
+Simple Forum System, simple in functionality, clean in interface, and mobile-first.
 
-功能简单
-只有基本的发帖，回帖，及一些会员服务功能
+Simple in functionality, only basic features such as posting, replying, and some member service functions.
 
-界面简洁
-没有花哨的设计，简单明了
+Clean interface, without fancy designs, simple and straightforward.
 
-移动优先
-前端采用bootstrap，适配电脑，平板，手机
+Mobile-first, using Bootstrap in the front-end, compatible with computers, tablets, and mobile phones.
 
-**空间及环境要求：**
+Space and environment requirements:
 
-1. PHP 5.4.0及以上
-2. 必须安装open_ssl扩展
-3. 插件系统需要用到scandir方法，如php.ini中disable_functions设置屏蔽掉了这个方法，请删除后重启。
-4. core/config目录下db.php,params.php,plugins.php,web.php文件要求写权限
-5. core/runtime目录及里面的目录文件要有写权限
-6. 根目录下的assets目录，avatar目录和upload目录要求写权限
+PHP 5.4.0 and above.
+The open_ssl extension must be installed.
+The plugin system requires the scandir method. If this method is disabled in php.ini by the disable_functions setting, please remove it and restart.
+The files db.php, params.php, plugins.php, and web.php in the core/config directory require write permissions.
+The core/runtime directory and its subdirectories and files require write permissions.
+The assets directory, avatar directory, and upload directory in the root directory require write permissions.
+Installation steps:
 
-**安装步骤：**
+Download the Simple Forum installation file and extract it.
+Upload the entire installation package to your website space.
+Enter the website address in the browser: http://your-website-url/install.php to enter the installation interface.
+Installation Step 1: It will display whether your website space environment meets the installation requirements. If it does, please click to proceed to the next step.
+Installation Step 2: Fill in the MySQL database information. After filling in, it will execute the SQL to generate tables and insert data, and automatically proceed to the next step.
+Installation Step 3: Create an administrator account. If your website space has enabled acceleration extensions like opcache, there may be errors. Please wait a moment and fill in again.
+Once the administrator account is created, the installation is complete.
+Help documentation:
 
-1. 下载simpleforum安装文件，解压
-2. 将整个安装包上传到网站空间
-3. 在浏览器中输入网址： http://你的网址/install.php 进入安装界面
-4. 安装第1步：会显示你的网站空间环境是否符合安装条件，如果符合请点击进入下一步
-5. 安装第2步：填写mysql数据库信息，填写完后，会执行sql生成表及插入数据，自动进入下一步
-6. 安装第3步：创建管理员帐号，如果你的网站空间开启了opcache等加速扩展，可能会报错，请稍等片刻，再重新填写。
-7. 管理员帐号创建后，安装操作就完成了。
-
-**帮助文档：**
-
-1. Nginx配置 https://simpleforum.org/t/23
-1. SMTP服务器设置 https://simpleforum.org/t/24
-1. 开启验证码 https://simpleforum.org/t/25
-1. 编辑器选择 https://simpleforum.org/t/26
-1. 开启缓存 https://simpleforum.org/t/27
-1. 开启第三方帐号登录 https://simpleforum.org/t/28
-1. 用户名过滤 https://simpleforum.org/t/29
-1. 网站验证 https://simpleforum.org/t/30
-1. 上传设置 https://simpleforum.org/t/31
-1. 用户组设定 https://simpleforum.org/t/32
-1. 模板设计 https://simpleforum.org/t/33
-1. 图片上传设定的修改 https://simpleforum.org/t/34
-1. 积分设置 https://simpleforum.org/t/35
-1. 启用https的方法 https://simpleforum.org/t/20
-1. 网址后缀加上.html的方法 https://simpleforum.org/t/56
-1. 自定义主题式样（配色）https://simpleforum.org/t/85
+Nginx Configuration: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/23
+SMTP Server Settings: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶//t/24
+Enabling Captcha: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/25
+Editor Selection: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/26
+Enabling Caching: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/27
+Enabling Third-Party Account Login: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/28
+Username Filtering: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/29
+Website Verification: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/30
+Upload Settings: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/31
+User Group Settings: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/32
+Template Design: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/33
+Modifying Image Upload Settings: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/34
+Point Settings: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/35
+Enabling HTTPS: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/20
+Adding .html to Website URLs: h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/56
+Custom Theme Style (Color Scheme): h̶t̶t̶p̶s̶:̶/̶/̶s̶i̶m̶p̶l̶e̶f̶o̶r̶u̶m̶.̶o̶r̶g̶/̶t/85
